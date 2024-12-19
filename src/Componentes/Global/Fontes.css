@@ -1,0 +1,68 @@
+:root {
+  --tipografia-principal: "Nunito", sans-serif;
+  --tipografia-secundaria: "Lora", sans-serif;
+}
+
+.font-1-xxl {
+  font: 600 4rem/1.125 var(--tipografia-principal), sans-serif
+}
+
+.font-1-xl {
+  font: 600 2rem/1.25 var(--tipografia-principal), sans-serif
+}
+
+.font-1-l {
+  font: 400 1.5rem/1.5 var(--tipografia-principal), sans-serif
+}
+
+.font-1-l-b {
+  font: 600 1.5rem/1.5 var(--tipografia-principal), sans-serif
+}
+
+.font-1-m {
+  font: 400 1.125rem/1.35 var(--tipografia-principal), sans-serif
+}
+
+.font-1-m-b {
+  font: 600 1.125rem/1.35 var(--tipografia-principal), sans-serif
+}
+
+.font-1-s {
+  font: 400 0.875rem/1.5 var(--tipografia-principal), sans-serif
+}
+
+.font-1-xs {
+  font: 400 0.75rem/1.35 var(--tipografia-principal), sans-serif
+}
+
+.font-2-xxl {
+  font: 600 4rem/1.125 var(--tipografia-secundaria), sans-serif
+}
+
+.font-2-xl {
+  font: 600 2rem/1.25 var(--tipografia-secundaria), sans-serif
+}
+
+.font-2-l {
+  font: 400 1.5rem/1.5 var(--tipografia-secundaria), sans-serif
+}
+
+.font-2-l-b {
+  font: 600 1.5rem/1.5 var(--tipografia-secundaria), sans-serif
+}
+
+.font-2-m {
+  font: 400 1.125rem/1.35 var(--tipografia-secundaria), sans-serif
+}
+
+.font-2-m-b {
+  font: 600 1.125rem/1.35 var(--tipografia-secundaria), sans-serif
+}
+
+.font-2-s {
+  font: 400 0.875rem/1.5 var(--tipografia-secundaria), sans-serif
+}
+
+.font-2-xs {
+  font: 400 0.75rem/1.35 var(--tipografia-secundaria), sans-serif
+}
