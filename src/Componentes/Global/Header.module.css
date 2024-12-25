@@ -1,188 +1,144 @@
-.bg {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: max-content;
-  display: grid;
-  padding: 10px 10rem;
+.headerBG {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 999;
+  width: 100%;
 }
 
-/* Container do header */
-.container {
+.headerBox {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  justify-content: space-between;
+  gap: 10px;
   align-items: center;
+  height: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
+.headerResp {
+  display: none;
+}
 
-.logoContainer {
+.headerLogo {
   justify-self: left;
 }
 
-.logoContainer img {
-  padding: 10px;
-}
-
-/* Container da caixa de pesquisa */
-.searchBox {
+.headerSearch {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background: rgba(95, 95, 95, 0.2);
-  border: 2px solid rgba(125, 125, 125, 0.1);
-  border-radius: 20px;
-  height: 40px;
-  padding: 0px 10px;
-}
-
-/* Caixa de pesquisa */
-.searchBox input {
+  justify-self: center;
   height: 50px;
-  background: none;
-  outline: none;
-  border: none;
+  background: rgba(95, 95, 95, 0.2);
+  padding: 5px 10px;
+  border: 2px solid rgba(125, 125, 125, 0.1);
+  border-radius: 40px;
   width: 100%;
-  color: white;
-  padding: 0px 10px;
 }
 
-.searchBox input::placeholder {
-  color: white;
-  max-width: 80%;
-}
-
-/* Icone de busca da caixa de pesquisa */
-.searchIcon {
-  display: flex;
+.headerSearch input {
+  width: 100%;
   background: none;
-  border-radius: 20px;
-  padding: 2px 10px;
-  margin-right: 8px;
-  transition: 0.2s;
+  border: none;
+  outline: none;
 }
 
-.resIcons {
-  display: none;
+.searchIcon {
+  align-content: center;
+  border-radius: 20px;
+  padding: 2px 20px;
+}
+
+.searchIcon img {
+  max-width: max-content !important;
 }
 
 .searchIcon:hover {
   background: var(--color-s1);
 }
 
-/* Quando passar o mouse por cima do input, o icone de pesquisa muda o background */
-.searchBox input:hover + .searchIcon {
+.headerSearch input:hover + .searchIcon {
   background: var(--color-s1);
 }
 
-/* Container dos icones do menu */
 .headerIcons {
   display: flex;
-  gap: 40px;
-  align-items: center;
   justify-self: right;
-}
-
-.headerIcons a {
   padding: 10px;
+  gap: 40px;
+  width: max-content;
 }
 
-/* Faz com que os icones não diminuam conforme o site vai diminuindo de tamanho, isso é feito para que o estilo padrão do header seja mantido, sem que quebre as outras imagens do site. */
-.headerIcons img {
-  max-width: max-content;
+.iconItem {
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.headerIcons a:hover, .resIcons a:hover {
+.iconItem:hover {
   background: var(--color-s1);
-  border-radius: 6px;
   transition: 0.2s;
 }
 
-@media (max-width: 1500px) {
-  .bg {
-    padding: 10px 5rem;
-  }
+.subHeader {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (max-width: 1400px) {
-  .bg {
-    padding: 10px 2rem;
-  }
+.subHeader a {
+  padding: 5px 20px;
 }
 
-@media (max-width: 1300px) {
-  .bg {
-    padding: 10px 10px;
-  }
-}
-
-@media (max-width: 1250px) {
-  .container {
-    gap: 40px;
-  }
+.subHeader a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 5px;
 }
 
 @media (max-width: 1100px) {
-  .container {
-    grid-template-columns: 1fr 1fr 1fr;
+  .subHeader {
+    display: none;
+  }
+  .headerBox {
+    border: none;
   }
 }
 
-@media (max-width: 1000px) {
-  .headerIcons a {
-    padding: 4px;
-  }
-}
-
-@media (max-width: 700px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px 40px;
-  }
-  .searchBox {
-    grid-column: 1 / -1;
-    grid-row: 2;
-  }
-}
-
-@media (max-width: 700px) {
-  .container {
+@media (max-width: 900px) {
+  .headerBox {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px 40px;
   }
-  .logoContainer {
+  .headerLogo {
     display: flex;
-    gap: 40px;
-    /* top: -10px;
-    position: absolute; */
-    justify-self: center;
-  }
-  .resIcons {
-    display: flex;
-    gap: 10px;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
   }
   .headerIcons {
     display: none;
-    /* display: flex;
-    justify-self: center;
-    grid-row: 2; */
   }
-  /* .searchBox {
-    grid-row: 3;
-  } */
+  .headerResp {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .headerResp a {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .headerResp a:hover {
+    background: var(--color-s1);
+    transition: .2s;
+  }
+  .headerBox {
+    padding: 0px 10px !important;
+  }
 }
 
 @media (max-width: 400px) {
-  .logoContainer {
-    display: flex;
+  .headerResp {
     gap: 0px;
-  }
-  .resIcons img {
-    max-width: max-content;
-  }
-  .logoContainer img {
-    max-width: max-content;
   }
 }

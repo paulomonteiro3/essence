@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Header.module.css";
 import Logo from "../../assets/icons/logo.svg?react";
 import Search from "../../assets/icons/search.svg?react";
@@ -9,52 +8,68 @@ import Menu from "../../assets/icons/menu.svg?react";
 
 const Header = () => {
   return (
-    <div className={`${styles.bg}`}>
-      <div className={`${styles.container}`}>
-        <div className={`${styles.logoContainer}`}>
-          <div className={`${styles.resIcons}`}>
+    <div>
+      <div className={`${styles.headerBG}`}>
+        <div className={`${styles.headerBox} container`}>
+          <div className={styles.headerLogo}>
+            <div className={styles.headerResp}>
+              <a href="">
+                <img src={Menu} alt="" className={styles.menuIcon}/>
+              </a>
+              <a href="">
+                <img src={Person} alt="" />
+              </a>
+            </div>
             <a href="">
-              <img src={Menu} />
+              <img src={Logo} alt="" />
             </a>
-            <a href="">
-              <img src={Person} />
+            <div className={styles.headerResp}>
+              <a href="">
+                <img src={Favorite} alt="" />
+              </a>
+              <a href="">
+                <img src={ShoppingCart} alt="" />
+              </a>
+            </div>
+          </div>
+          <div className={styles.headerSearch}>
+            <input type="text" className="font-1-s color-p7" />
+            <a href="" className={`${styles.searchIcon}`}>
+              <img src={Search} alt="" />
             </a>
           </div>
-          <a href="">
-            <img src={Logo} alt="" />
-          </a>
-          <div className={`${styles.resIcons}`}>
-            <a href="">
-              <img src={Favorite} />
-            </a>
-            <a href="">
-              <img src={ShoppingCart} />
-            </a>
+          <div className={styles.headerIcons}>
+            <div className={styles.iconItem}>
+              <a href="">
+                <img src={Favorite} alt="" />
+              </a>
+            </div>
+            <div className={styles.iconItem}>
+              <a href="">
+                <img src={ShoppingCart} alt="" />
+              </a>
+            </div>
+            <div className={styles.iconItem}>
+              <a href="">
+                <img src={Person} alt="" />
+              </a>
+            </div>
+            <div className={styles.iconItem}>
+              <a href="">
+                <img src={Menu} alt="" />
+              </a>
+            </div>
           </div>
         </div>
-        <div className={`${styles.searchBox}`}>
-          <input
-            type="text"
-            className={`font-2-s`}
-            placeholder="O que procura?"
-          />
-          <a href="" className={`${styles.searchIcon}`}>
-            <img src={Search} alt="" />
-          </a>
-        </div>
-        <div className={`${styles.headerIcons}`}>
-          <a href="">
-            <img src={Favorite} />
-          </a>
-          <a href="">
-            <img src={ShoppingCart} />
-          </a>
-          <a href="">
-            <img src={Person} />
-          </a>
-          <a href="">
-            <img src={Menu} />
-          </a>
+        <div className={`${styles.subHeader} container`}>
+          <a href="">natal</a>
+          <a href="">promoções</a>
+          <a href="">mais vendidos</a>
+          <a href="">homens</a>
+          <a href="">mulheres</a>
+          <a href="">mulheres</a>
+          <a href="">marcas</a>
+          <a href="">ocasiões especiais</a>
         </div>
       </div>
     </div>
