@@ -6,109 +6,122 @@ import FestiveBliss from "../../assets/img/festive-bliss.jpg";
 import Favorite from "../../assets/icons/favorite-red.svg?react";
 import AddItem from "../../assets/icons/add_shopping_cart.svg?react";
 
-const Colecao = () => {
+const Descontos = () => {
   return (
-    <section className={`${styles.colecao} container`}>
-      <h1 className={`${styles.title} font-1-xl color-p0`}>
-        Confira nossa nova coleção de natal
-      </h1>
-      <div className={`${styles.colecaoContainer}`}>
-        <div className={`${styles.productCard}`}>
-          <div className={`${styles.cardIMG}`}>
-            <a href="">
-              <img src={SilentNight} alt="" />
-            </a>
-          </div>
-          <button className={`${styles.iconContainer}`}>
-            <img src={Favorite} className={`${styles.iconFavorite}`}></img>
-          </button>
-          <button className={`${styles.addCartContainer}`}>
-            <img src={AddItem} className={`${styles.iconAddCart}`}></img>
-          </button>
-          <div className={`${styles.cardContent}`}>
-            <a href="" className={`${styles.cardTitle} color-p0 font-1-m-b`}>
-              Silent Night
-            </a>
-            <div>
+    <section>
+      <section className={`${styles.colecao} container`}>
+        <h1 className={`${styles.title} font-1-xl color-p0`}>
+          Confira nossa nova coleção de natal
+        </h1>
+        <div className={`gridContainer ${styles.gridColumns}`}>
+          <div className={`productCard`}>
+            <div className={`cardIMG`}>
               <a href="">
-                <p className={`${styles.cardPrice} color-p0 font-1-m`}>
-                  R$ 159,99
-                </p>
-                <span className={`${styles.cardDiscoint} color-p3 font-1-m`}>
-                  -20%
-                </span>
+                <img src={SilentNight} alt="" />
               </a>
             </div>
-            <a href="">
-              <p className={`${styles.cardFPrice} color-p0 font-1-m`}>R$ 127</p>
-            </a>
-          </div>
-        </div>
-        <div className={`${styles.productCard}`}>
-          <div className={`${styles.cardIMG}`}>
-            <a href="">
-              <img src={FrostedDreams} alt="" />
-            </a>
-          </div>
-          <button className={`${styles.iconContainer}`}>
-            <img src={Favorite} className={`${styles.iconFavorite}`}></img>
-          </button>
-          <button className={`${styles.addCartContainer}`}>
-            <img src={AddItem} className={`${styles.iconAddCart}`}></img>
-          </button>
-          <div className={`${styles.cardContent}`}>
-            <a href="" className={`${styles.cardTitle} color-p0 font-1-m-b`}>
-              Frosted Dreams
-            </a>
-            <div>
+            <button className={`iconContainer`}>
+              <img src={Favorite} className={`iconFavorite`}></img>
+            </button>
+            <button className={`addCartContainer`}>
+              <img src={AddItem} className={`iconAddCart`}></img>
+            </button>
+            <div className={`cardContent`}>
+              <a href="" className={`cardTitle color-p0 font-1-m-b`}>
+                Silent Night
+              </a>
+              <div>
+                <a href="">
+                  <p className={`cardPrice color-p0 font-1-m`}>
+                    R$ 159,99
+                  </p>
+                  <span className={`cardDiscoint color-p3 font-1-m`}>
+                    -20%
+                  </span>
+                </a>
+              </div>
               <a href="">
-                <p className={`${styles.cardPrice} color-p0 font-1-m`}>
-                  R$ 159,99
+                <p className={`cardFPrice color-p0 font-1-m`}>
+                  R$ 127
                 </p>
-                <span className={`${styles.cardDiscoint} color-p3 font-1-m`}>
-                  -20%
-                </span>
               </a>
             </div>
-            <a href="">
-              <p className={`${styles.cardFPrice} color-p0 font-1-m`}>R$ 127</p>
-            </a>
           </div>
-        </div>
-        <div className={`${styles.productCard}`}>
-          <div className={`${styles.cardIMG}`}>
-            <a href="">
-              <img src={FestiveBliss} alt="" />
-            </a>
-          </div>
-          <button className={`${styles.iconContainer}`}>
-            <img src={Favorite} className={`${styles.iconFavorite}`}></img>
-          </button>
-          <button className={`${styles.addCartContainer}`}>
-            <img src={AddItem} className={`${styles.iconAddCart}`}></img>
-          </button>
-          <div className={`${styles.cardContent}`}>
-            <a href="" className={`${styles.cardTitle} color-p0 font-1-m-b`}>
-              Festive Bliss
-            </a>
-            <div>
+          <div className={`productCard`}>
+            <div className={`cardIMG`}>
               <a href="">
-                <p className={`${styles.cardPrice} color-p0 font-1-m`}>
-                  R$ 159,99
-                </p>
-                <span className={`${styles.cardDiscoint} color-p3 font-1-m`}>
-                  -20%
-                </span>
+                <img src={FrostedDreams} alt="" />
               </a>
             </div>
-            <a href="">
-              <p className={`${styles.cardFPrice} color-p0 font-1-m`}>R$ 127</p>
-            </a>
+            <button className={`iconContainer`}>
+              <img src={Favorite} className={`iconFavorite`}></img>
+            </button>
+            <button className={`addCartContainer`}>
+              <img src={AddItem} className={`iconAddCart`}></img>
+            </button>
+            <div className={`cardContent`}>
+              <a href="" className={`cardTitle color-p0 font-1-m-b`}>
+                Frosted Dreams
+              </a>
+              <div>
+                <a href="">
+                  <p className={`cardPrice color-p0 font-1-m`}>
+                    R$ 159,99
+                  </p>
+                  <span className={`cardDiscoint color-p3 font-1-m`}>
+                    -20%
+                  </span>
+                </a>
+              </div>
+              <a href="">
+                <p className={`cardFPrice color-p0 font-1-m`}>
+                  R$ 127
+                </p>
+              </a>
+            </div>
+          </div>
+          <div className={`productCard`}>
+            <div className={`cardIMG`}>
+              <a href="">
+                <img src={FestiveBliss} alt="" />
+              </a>
+            </div>
+            <button className={`iconContainer`}>
+              <img src={Favorite} className={`iconFavorite`}></img>
+            </button>
+            <button className={`addCartContainer`}>
+              <img src={AddItem} className={`iconAddCart`}></img>
+            </button>
+            <div className={`cardContent`}>
+              <a href="" className={`cardTitle color-p0 font-1-m-b`}>
+                Festive Bliss
+              </a>
+              <div>
+                <a href="">
+                  <p className={`cardPrice color-p0 font-1-m`}>
+                    R$ 159,99
+                  </p>
+                  <span className={`cardDiscoint color-p3 font-1-m`}>
+                    -20%
+                  </span>
+                </a>
+              </div>
+              <a href="">
+                <p className={`cardFPrice color-p0 font-1-m`}>
+                  R$ 127
+                </p>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+        <div className={`showMore`}>
+          <button className={`showMoreBtn font-1-m color-p1`}>
+            Ver Mais
+          </button>
+        </div>
+      </section>
     </section>
   );
 };
 
-export default Colecao;
+export default Descontos;

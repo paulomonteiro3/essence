@@ -1,42 +1,52 @@
+.colecao {
+  margin-bottom: 120px;
+}
+
 .title {
   text-align: center;
 }
 
-.colecaoContainer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  gap: 40px;
+.gridColumns {
+  grid-template-columns: max-content max-content max-content;
+  gap: 80px 20px !important;
   justify-content: center;
 }
 
-.cardTitle {
+:global(.cardTitle) {
   display: block;
 }
 
-.cardPrice {
+:global(.cardPrice) {
   display: inline-block;
   color: red;
   text-decoration: line-through;
   margin-right: 10px;
+  font-weight: bold;
 }
 
-.cardContent {
+:global(.cardFPrice) {
+  font-weight: bold;
+}
+
+:global(.cardContent) {
   margin-top: 10px;
 }
 
-.productCard {
+:global(.productCard) {
   position: relative;
+  max-width: max-content;
   object-fit: none;
-  width: 300px;
 }
 
-.cardIMG img {
+:global(.cardIMG img) {
   border-radius: 8px;
   box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
 }
 
-.iconContainer {
+:global(.iconContainer) {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -47,7 +57,7 @@
   background-color: white;
 }
 
-.addCartContainer {
+:global(.addCartContainer) {
   position: absolute;
   bottom: 90px;
   right: 10px;
@@ -58,24 +68,62 @@
   background-color: white;
 }
 
-.iconContainer:hover {
-  background-color: #f7f7f7;
+:global(.addCartContainer:hover) {
+  background-color: #f5f5f5;
 }
 
-.iconFavorite {
+:global(.iconContainer:hover) {
+  background-color: #f5f5f5;
+}
+
+:global(.iconFavorite) {
   display: flex;
   align-self: center;
   justify-self: center;
 }
 
-.iconAddCart {
+:global(.iconAddCart) {
   display: flex;
   align-self: center;
   justify-self: center;
+}
+
+:global(.showMore) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.showMoreBtn) {
+  height: 40px;
+  width: 220px;
+  border: 2px solid var(--color-s1);
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+:global(.showMoreBtn:hover) {
+  background-color: var(--color-s1);
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .gridColumns {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .colecao {
+    padding: 10px !important;
+  }
 }
 
 @media (max-width: 500px) {
-  .colecao {
-    padding: 10px !important;
+  .gridColumns {
+    grid-template-columns: 1fr;
   }
 }

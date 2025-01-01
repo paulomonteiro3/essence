@@ -41,6 +41,9 @@
   outline: none;
 }
 
+.headerSearch input::placeholder {
+  color: var(--color-p4);
+}
 .searchIcon {
   align-content: center;
   border-radius: 20px;

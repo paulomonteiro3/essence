@@ -14,7 +14,7 @@ const Header = () => {
           <div className={styles.headerLogo}>
             <div className={styles.headerResp}>
               <a href="">
-                <img src={Menu} alt="" className={styles.menuIcon}/>
+                <img src={Menu} alt="" className={styles.menuIcon} />
               </a>
               <a href="">
                 <img src={Person} alt="" />
@@ -33,7 +33,11 @@ const Header = () => {
             </div>
           </div>
           <div className={styles.headerSearch}>
-            <input type="text" className="font-1-s color-p7" />
+            <input
+              type="text"
+              className="font-1-s color-p7"
+              placeholder="O que procura?"
+            />
             <a href="" className={`${styles.searchIcon}`}>
               <img src={Search} alt="" />
             </a>

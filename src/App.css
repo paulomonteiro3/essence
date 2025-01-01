@@ -53,3 +53,20 @@ a {
   margin: 0 auto;
 }
 
+.gridContainer {
+  display: grid;
+  margin: 80px 0px;
+  justify-items: center;
+  align-items: center;
+  gap: 80px 20px;
+}
+
+
+.layoutProdFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 120px 40px;
+  margin-bottom: 40px;
+}
