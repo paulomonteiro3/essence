@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.descontos {
+  margin-bottom: 120px;
+}
+
 .gridColumns {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }

@@ -1,0 +1,56 @@
+.teste img {
+  height: 620px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.winterBG {
+  position: relative;
+}
+
+.content {
+  bottom: 40px;
+  position: absolute;
+  z-index: 999;
+}
+
+.title {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.desc {
+  padding-bottom: 20px;
+  max-width: 48ch;
+}
+
+.btn {
+  height: 40px;
+  background: none;
+  width: 200px;
+  border: 2px solid var(--color-p7);
+  color: var(--color-p7);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #001629;
+  border: solid 2px #001629;
+  transition: .2s;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 2rem;
+  }
+  .desc {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    padding: 10px;
+  }
+}

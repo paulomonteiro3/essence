@@ -6,6 +6,7 @@ import "./Componentes/Global/Fontes.css"
 import Introducao from './Componentes/introducao/Introducao'
 import Colecao from './Componentes/Colecao/colecao'
 import Descontos from './Componentes/Descontos/Descontos'
+import ColecaoInverno from './Componentes/Colecao_Inverno/ColecaoInverno'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Introducao />
       <Colecao />
       <Descontos />
+      <ColecaoInverno />
     </div>
   )
 }
