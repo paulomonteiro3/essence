@@ -17,6 +17,11 @@ body {
   background-color: var(--color-p7);
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+
 h1,
 h2,
 h3,

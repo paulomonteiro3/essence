@@ -9,6 +9,7 @@ import Descontos from './Componentes/Descontos/Descontos'
 import ColecaoInverno from './Componentes/Colecao_Inverno/ColecaoInverno'
 import Categorias from './Componentes/Categorias/Categorias'
 import Sobre from './Componentes/Sobre/Sobre'
+import NewsLetter from './Componentes/NewsLetter/NewsLetter'
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <ColecaoInverno />
       <Categorias />
       <Sobre />
+      <NewsLetter />
     </div>
   )
 }

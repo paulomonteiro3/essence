@@ -13,3 +13,9 @@
 .sobre p {
   max-width: 100ch;
 }
+
+@media (max-width: 500px) {
+  .sobre {
+    padding: 0px 20px;
+  }
+}
