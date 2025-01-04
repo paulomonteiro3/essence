@@ -8,6 +8,7 @@ import Colecao from './Componentes/Colecao/colecao'
 import Descontos from './Componentes/Descontos/Descontos'
 import ColecaoInverno from './Componentes/Colecao_Inverno/ColecaoInverno'
 import Categorias from './Componentes/Categorias/Categorias'
+import Sobre from './Componentes/Sobre/Sobre'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <Descontos />
       <ColecaoInverno />
       <Categorias />
+      <Sobre />
     </div>
   )
 }
