@@ -10,6 +10,7 @@ import ColecaoInverno from './Componentes/Colecao_Inverno/ColecaoInverno'
 import Categorias from './Componentes/Categorias/Categorias'
 import Sobre from './Componentes/Sobre/Sobre'
 import NewsLetter from './Componentes/NewsLetter/NewsLetter'
+import Footer from './Componentes/Global/Footer'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       <Categorias />
       <Sobre />
       <NewsLetter />
+      <Footer />
     </div>
   )
 }
